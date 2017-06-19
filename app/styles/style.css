@@ -94,7 +94,7 @@ h6 {
     outline: 0;
 }
 body {
-    background-image: url('../images/mramor.jpg');
+    background-color: #e6b717;
     line-height: 1;
     color: #707070;
     /*background: #fff;*/
@@ -156,8 +156,10 @@ h2 {
 /*********Header section styles********/
 
 #header {
-    background-image: url('../images/mramor.jpg');
+    background-color: #e6b717;;
     min-height: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .navbar-fixed-top {
     border: 0;
@@ -1092,7 +1094,7 @@ a.gp {
     background: #8b7039;
 }
 .footer-top {
-    background-image: url('../images/mramor.jpg');
+    background-color: #e6b717;
     padding-bottom: 20px;
 }
 .footer h3 {
@@ -1198,7 +1200,7 @@ ul.popular-posts li span {
     font-size: 14px;
 }
 .footer-bottom {
-    background-image: url('../images/mramor.jpg');
+    background-color: #e6b717;
     padding: 20px 0;
     color: #aaa;
 }
@@ -1832,4 +1834,9 @@ span.heading-nav a:hover {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
     }
+}
+
+.container-fluid{
+  padding-right: 10%;
+  padding-left: 10%;
 }

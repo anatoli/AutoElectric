@@ -74,7 +74,6 @@ html,body { overflow-x: hidden; }
 body{
   padding: 2% 0 !important;
   font-family: SegoeUIRegular;
-  max-width: 1440px;
   min-width: 700px;
 }
 .form-control:focus {
@@ -405,7 +404,7 @@ ul li {
 }
 
 #myCarousel .active {
-  background-color: #d4e5f6;
+  background-color: #efcdb8;
 }
 /*//////////////////////////////////////////////////////*/
 
