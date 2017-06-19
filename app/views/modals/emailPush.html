@@ -1,0 +1,35 @@
+<form class="modal-content-push" name="form" style="padding-top: 15%;  height: 250px; height: 270px">
+  <div class="modal-fonts">
+    <!--<div class="">-->
+      <!--<div class="modal-title float-left left-header-div" ng-if="mod=='query'">-->
+        <!--{{Modal_Header_1 |translate}}-->
+      <!--</div>-->
+      <!--<div class="modal-title float-left left-header-div" ng-if="mod=='summary'">-->
+        <!--{{Modal_Header_2 |translate}}-->
+      <!--</div>-->
+      <!--<div class="modal-title float-left left-header-div" ng-if="mod=='call'">-->
+        <!--{{Modal_Header_3 |translate}}-->
+      <!--</div>-->
+      <!--<div class="pull-right">-->
+        <!--<button type="button " ng-click="cancel()" class="btn btn-full-orange btn-radius glyphicon glyphicon-remove btn-top">-->
+        <!--</button>-->
+      <!--</div>-->
+    </div>
+
+    <div class="modal-body">
+      <!--<h4 ng-if="mod=='call'">{{Modal_Title_11 |translate}}</br>{{Modal_Title_12 |translate}} </h4>-->
+          <h4 ng-if="alertTrue"> {{Modal_Alert_True| translate}} </h4>
+          <h4 ng-if="!alertTrue"> {{Modal_Alert_Error| translate}} </h4>
+      </div>
+      <!--/////////////////************/////////-->
+
+    </div>
+
+    <!--<div class=" row modal-footer">-->
+      <!--<div class="col-lg-4 col-md-4 col-sm-7 col-xs-10 center-block text-center">-->
+        <!--<button ng-click="PushEmail(mod)" class="center-block  form-control btn-full-blue btn-radius btn-modal">{{Modal_Btn_push |translate}}   </button>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  </div>
+</form>

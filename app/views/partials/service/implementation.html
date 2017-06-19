@@ -1,0 +1,530 @@
+
+<div id="myCarousel" class="carousel slide first-fixed-block " data-interval="3000" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="background-slide background-slide-1"></div>
+      <img class="none-max-width n-bg-sl" src="/images/service/eveningTao.jpg">
+      <div class="row slide-1 captions">
+        <div class="col-md-5 col-sm-5 col-xs-5 margin-slide">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-11 margin-slide slide-1">
+          <div class=" slide-1-block-background slide-1-block-background-company">
+            <h1>{{Implementation_Slider_Title| translate}} </br></h1>
+            <p>{{Implementation_Slider_Description| translate}} </p>
+          </div>
+          <div class="row margin-slide">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
+              <button ng-click="Email('query')" class=" form-control btn-full-blue">{{SLIDER_BTN_2 |translate}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div ncy-breadcrumb class="breadcrumb-header"></div>
+<div class="row block-default none-row">
+  <h4 class="rubric it-title">{{SecondPage_Icons_Title | translate}}</h4>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-4 pointer text-center" ng-class="{'act':state=='business'}">
+    <div ng-click="Filter('business')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Implementation_Filter_btn_1|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class="col-md-4 col-sm-4 col-xs-4 pointer text-center" ng-class="{'act':state=='mobile'}">
+    <div ng-click="Filter('mobile')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Implementation_Filter_btn_2|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-4 pointer text-center " ng-class="{'act':state=='it'}">
+    <div ng-click="Filter('it')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Implementation_Filter_btn_3|translate}}</div>
+  </div>
+</div>
+<div class="none-row block-default company" >
+  <div ng-show='state=="all" || state=="it" ' class=" block-comment">
+    <h3 class="title-h">{{Implementation_Project_1_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+          <img src="images/service/tehno-bank.jpg" style="height: 220px; width: 100%">
+          <div class="img-footer-implementation" >
+            <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_3|translate}}</span> </h5>
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': first, 'box-implementation':!first }">
+            <img class="img-relative" src="images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b> {{Implementation_Project_1_Client|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_1|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_2|translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b>  {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_3|translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_1_Description_4|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_1_li_1|translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_1_li_2|translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_1_li_3|translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_1_li_4|translate}}</span></p></li>
+                <li><span class="ulli-num">5</span><p><span>{{Implementation_Project_1_li_5|translate}}</span></p></li>
+              </ul>
+            </p>
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!first" ng-click="DetailsOpen('first')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+      <!--<div class=" col-md-5"></div>-->
+      <!--<div class="col-md-3">-->
+        <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+  <div ng-show='state=="all" || state=="it"' class=" block-comment">
+    <h3 class="title-h">{{Implementation_Project_2_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+          <img src="images/service/asd.jpg" style="height: 220px; width: 100%">
+          <div class="img-footer-implementation" >
+            <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_3|translate}}</span></h5>
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': second, 'box-implementation':!second }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b>{{Implementation_Project_2_Client|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_1|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_2|translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_3|translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_2_Description_4|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_2_li_1|translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_2_li_2|translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_2_li_3|translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_2_li_4|translate}}</span></p></li>
+                <li><span class="ulli-num">5</span><p><span>{{Implementation_Project_2_li_5|translate}}</span></p></li>
+                <li><span class="ulli-num">6</span><p><span>{{Implementation_Project_2_li_6|translate}}</span></p></li>
+
+              </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+      <!--<div class=" col-md-5"></div>-->
+      <!--<div class="col-md-3">-->
+        <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+  <div ng-show='state=="all" || state=="it"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_3_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+          <img src="images/service/naftan.jpg" style="height: 220px; width: 100%">
+          <div class="img-footer-implementation" >
+            <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_3|translate}}</span></h5>
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': third, 'box-implementation':!third }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b> {{Implementation_Project_3_Client|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_3_Description_1| translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_3_Description_2| translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_3_Description_3| translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_3_Description_4| translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_3_li_1| translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_3_li_2| translate}}</span>
+                  <ul class="classic orange-marker">
+                    <li><span>{{Implementation_Project_3_li_2_1 |translate}}</span></li>
+                    <li><span>{{Implementation_Project_3_li_2_2 |translate}}</span></li>
+                    <li><span>{{Implementation_Project_3_li_2_3 |translate}}</span></li>
+                    <li><span>{{Implementation_Project_3_li_2_4 |translate}}</span></li>
+                    <li><span>{{Implementation_Project_3_li_2_5 |translate}}</span></li>
+                    <li><span>{{Implementation_Project_3_li_2_6 |translate}}</span></li>
+                  </ul>
+                </p></li>
+              </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!third" ng-click="DetailsOpen('third')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+      <!--<div class=" col-md-5"></div>-->
+      <!--<div class="col-md-3">-->
+        <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+  <div ng-show='state=="all" || state=="it"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_4_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+          <img src="images/service/beltoll.jpg" style="height: 220px; width: 100%">
+          <div class="img-footer-implementation" >
+            <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_3|translate}}</span></h5>
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': fourth, 'box-implementation':!fourth }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b> {{Implementation_Project_4_Client |translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_4_Description_1 |translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_4_Description_2| translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span>
+                  <p><span>{{ Implementation_Project_4_Description_3_li_1 | translate}}</span></p>
+                </li>
+                <li><span class="ulli-num">2</span>
+                  <p>
+                    <span>{{ Implementation_Project_4_Description_3_li_2 | translate}}
+                    </span>
+                  </p>
+                </li>
+
+            </ul>
+            </p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_4_Description_4 |translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_4_li_1 |translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_4_li_2 |translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_4_li_3 |translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_4_li_4 |translate}}</span></p></li>
+              </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!fourth" ng-click="DetailsOpen('fourth')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+      <!--<div class=" col-md-5"></div>-->
+      <!--<div class="col-md-3">-->
+        <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+
+  <div ng-show='state=="all" || state=="mobile"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_5_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+        <img src="images/service/telecom_graphics.jpg" style="height: 220px; width: 100%">
+        <div class="img-footer-implementation" >
+          <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_2|translate}}</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': fifth, 'box-implementation':!fifth }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b>{{Implementation_Project_5_Client |translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_5_Description_1 |translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_5_Description_2 | translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">
+              {{Implementation_Project_5_Description_3 | translate}}
+            </p>
+            </br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_5_Description_4 | translate}} </p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_5_li_1 | translate}}</span></p></li>
+            <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_5_li_2 | translate}}</span></p></li>
+            <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_5_li_3 | translate}}</span></p></li>
+            <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_5_li_4 | translate}}</span></p></li>
+            </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!fifth" ng-click="DetailsOpen('fifth')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+    <!--<div class=" col-md-5"></div>-->
+    <!--<div class="col-md-3">-->
+    <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+    <!--</div>-->
+    <!--</div>-->
+  </div>
+  <div ng-show='state=="all" || state=="mobile"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_6_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+        <img src="images/service/telecom_controls_revenues.jpg" style="height: 220px; width: 100%">
+        <div class="img-footer-implementation" >
+          <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_2|translate}}</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': sixth, 'box-implementation':!sixth }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b>{{Implementation_Project_6_Client |translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_6_Description_1 |translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_6_Description_2| translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">
+              {{Implementation_Project_6_Description_3| translate}}
+            </p>
+            </br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_6_Description_4| translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_6_li_1| translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_6_li_2| translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_6_li_3| translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_6_li_4| translate}}</span></p></li>
+                <li><span class="ulli-num">5</span><p><span>{{Implementation_Project_6_li_5| translate}}</span></p></li>
+              </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!sixth" ng-click="DetailsOpen('sixth')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+    <!--<div class=" col-md-5"></div>-->
+    <!--<div class="col-md-3">-->
+    <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+    <!--</div>-->
+    <!--</div>-->
+  </div>
+  <div ng-show='state=="all" || state=="mobile"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_7_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+        <img src="images/service/telecom_system_control.jpg" style="height: 220px; width: 100%">
+        <div class="img-footer-implementation" >
+          <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_2|translate}}</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': seventh, 'box-implementation':!seventh }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b>{{Implementation_Project_7_Client |translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_7_Description_1 |translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_7_Description_2 |translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">
+              {{Implementation_Project_7_Description_3 |translate}}
+            </p>
+            </br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_7_Description_4 |translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_7_li_1 |translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_7_li_2 |translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_7_li_3 |translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_7_li_4 |translate}}</span></p></li>
+            </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!seventh" ng-click="DetailsOpen('seventh')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+    <!--<div class=" col-md-5"></div>-->
+    <!--<div class="col-md-3">-->
+    <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+    <!--</div>-->
+    <!--</div>-->
+  </div>
+  <div ng-show='state=="all" || state=="mobile"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_8_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+        <img src="images/service/telecom_new_version.jpg" style="height: 220px; width: 100%">
+        <div class="img-footer-implementation" >
+          <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_2|translate}}</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': eighth, 'box-implementation':!eighth }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b> {{Implementation_Project_8_Client|translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_8_Description_1|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_8_Description_2|translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b> {{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">
+              {{Implementation_Project_8_Description_3|translate}}
+            </p>
+            </br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_8_Description_4|translate}}</p></br></br>
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!eighth" ng-click="DetailsOpen('eighth')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show='state=="all" || state=="business"' class="block-comment">
+    <h3 class="title-h">{{Implementation_Project_9_Title_1|translate}}</h3>
+    <div class="row rubric comment-white-implementations">
+      <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 padding-top-30 padding-bottom-30">
+        <img src="images/notariat.jpg" style="height: 220px; width: 100%">
+        <div class="img-footer-implementation" >
+          <h5 class="ideaDetails segoe-regular"><span class="segoe-regular" style="color: #fff">{{Implementation_Filter_btn_1|translate}}</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 col-sm-6 col-xs-11 padding-tl-30 ">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " ng-class="{'full-size': ninth, 'box-implementation':!ninth }">
+            <img class="img-relative" src="../../../images/company/chevron.png">
+            <p class="goal-p"><b>{{Implementation_All_Title_1|translate}}:</b>{{Implementation_Project_9_Client |translate}}</p></br></br>
+            <p class="goal-p">{{Implementation_Project_9_Description_1|translate}}</p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_2|translate}}</b></p></br></br>
+            <p class="goal-p">{{Implementation_Project_9_Description_2|translate}}</p></br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_3_1|translate}}</b>{{Implementation_All_Title_3_2|translate}}</p></br></br>
+            <p class="goal-p">
+              {{Implementation_Project_9_Description_3|translate}}
+            </p>
+            </br>
+            </br>
+            <p class="goal-p"><b>{{Implementation_All_Title_4|translate}}</b></p></br></br>
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_9_Description_4_li_1|translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_9_Description_4_li_2|translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_9_Description_4_li_3|translate}}</span></p></li>
+              </ul>
+            </p></br></br>
+            <p class="goal-p"><b>{{Implementation_All_Title_5|translate}}</b></p></br></br>
+
+            <p class="goal-p">
+              <ul class="ulli">
+                <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_9_li_1|translate}}</span></p></li>
+                <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_9_li_2|translate}}</span></p></li>
+                <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_9_li_3|translate}}</span></p></li>
+                <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_9_li_4|translate}}</span></p></li>
+                <li><span class="ulli-num">5</span><p><span>{{Implementation_Project_9_li_5|translate}}</span></p></li>
+                <li><span class="ulli-num">6</span><p><span>{{Implementation_Project_9_li_6|translate}}</span></p></li>
+                <li><span class="ulli-num">7</span><p><span>{{Implementation_Project_9_li_7|translate}}</span></p></li>
+                <li><span class="ulli-num">8</span><p><span>{{Implementation_Project_9_li_8|translate}}</span></p></li>
+                <li><span class="ulli-num">9</span><p><span>{{Implementation_Project_9_li_9|translate}}</span></p></li>
+              </ul>
+            </p>
+
+          </div>
+          <div class=" col-lg-5 col-md-5 col-sm-5">
+            <button class="form-control btn-blue " ng-show="!ninth" ng-click="DetailsOpen('ninth')">{{Ideas_Btn_1|translate}}</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--<div class="row rubric comment-white-details">-->
+    <!--<div class=" col-md-5"></div>-->
+    <!--<div class="col-md-3">-->
+    <!--<button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>-->
+    <!--</div>-->
+    <!--</div>-->
+  </div>
+
+  </div>
+
+</div>

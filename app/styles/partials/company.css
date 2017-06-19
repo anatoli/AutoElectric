@@ -1,0 +1,47 @@
+.company{
+  /*height: 480px;*/
+  margin-right: 0;
+  margin-left: 0;
+}
+.company p{
+  font-size: 16px;
+  /*padding-top: 6%;*/
+}
+.company-blocks{
+  margin-top: 2%;
+}
+.company .name-text{
+  padding-top: 9.5%;
+}
+.company h5{
+  font-size: 16px;
+  font-weight: bold;
+}
+.company h6{
+  font-style: italic;
+}
+.company h2{
+  /*padding-top: 20px !important;*/
+  font-size: 30px !important;
+}
+.company-descriptions{
+  padding-left: 0;
+}
+
+.about-first-btn{
+  float: left;
+  /*width: 15%;*/
+}
+.about-second-btn{
+  /*margin-left:20px;*/
+  float: left;
+  /*width: 28%;*/
+}
+.avatar img{
+  border: 3px solid #fff;
+  border-radius: 6px;
+}
+.background-company{
+  background-image: url(../../images/company.jpg);
+  background-size: cover;
+}

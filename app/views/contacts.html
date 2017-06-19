@@ -1,0 +1,66 @@
+<div class="row" style="position:relative; height: auto">
+  <div class="col-md-6 col-sm-6 contacts-bg  ">
+    <h1 class="rubric">{{Contacts_Title | translate}}</h1>
+    <div class="row  contacts contactsForm">
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
+        <div class="row dop-margin-email">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/map-mark-symbol-of-ios-7_wh.png" style="margin: 0;" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p>{{Error_Address_1 |translate}}</br> {{Error_Address_2 |translate}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
+        <div class="row dop-margin-email footer-404-margin-img">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/small-mail-envelope_wh.png " class="icon" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p class="center-line">e-mail: <a  ng-click="openModal('query')" href="" style="color:#fff;"> info@sibel.by</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block ">
+        <div class="row dop-margin-email footer-404-margin-img">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/worldwide.png" class="icon" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p class="center-line"><a style="color:#fff;" href="#/">www.sibel.by</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-ld-12 col-md-12 col-sm-12 col-xs-12 marker-block  footer-404-margin-img">
+        <div class="row dop-margin-email phone">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img" >
+            <img src="../images/404/touch-screen-mobile-device_wh.png" class="icon" >
+          </div>
+          <div class="col-md-10 col-sm-10 col-xs-10 number" >
+            <p>+375 (29) 133 31 45</p>
+            <p>+375 (29) 769 29 96</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2 pull-right btn-back">
+      <i title={{Contacts_Tooltip}} ng-show="map" ng-click="mapVisible()" class="glyphicon glyphicon-arrow-left"><span class="narrow">{{Contacts_Back| translate}}</span></i>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6 contacts-map "  >
+    <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uwalcZZ4mxRSeH9_vkYE2kBSXjJUzkHa&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=uwalcZZ4mxRSeH9_vkYE2kBSXjJUzkHa&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+
+    <leaflet ng-if="map" lf-center="center" controls="controls" event-broadcast="events" markers="markers" height="100%" width="100%"></leaflet>
+    <div class="row contacts-btn" ng-init="!map"  ng-if="!map"  >
+      <div class="col-md-5 col-sm-5 col-xs-5">
+        <button class="form-control btn-full-orange" ng-click="mapVisible()">{{Contacts_Btn_1 | translate}}</button>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-5">
+        <button class="form-control btn-orange" ng-click="openModal('query')">{{Contacts_Btn_2 | translate}}</button>
+      </div>
+    </div>
+  </div>
+
+</div>

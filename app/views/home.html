@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3">
+
+  </div>
+  <div class="col-md-9 col-sm-9 col-xs-9 col-lg-9">
+    <img title="labelAuto" src="">
+  </div>
+</div>
+
+<div id="myCarousel" class="carousel slide first-fixed-block " data-interval="3000" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="row slide-1 captions">
+        <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2 margin-slide">
+            <ul class="nav nav-list bs-docs-sidenav affix">
+              <li ng-repeat="auto in autos " class="active">
+                <a href="#typography"><em class="icon-chevron-right"></em> {{auto.label}} {{auto.years}}</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="col-md-10 col-sm-10 col-xs-10 col-lg-10 margin-slide slide-1">
+          <div class=" slide-1-block-background slide-1-block-background-company">
+            <h1>{{SecondPage_Slider_Title| translate}} </br></h1>
+            <p>{{SecondPage_Slider_Text| translate}} </p>
+          </div>
+          <div class="row margin-slide">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
+              <button class="form-control btn-full-orange" ng-click="openModal('congratulation')">{{SecondPage_Slider_Btn_2 |translate}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row block-default none-row">
+  <div ng-click="OpenState('.service.business')" class="col-it-inf col-md-3 col-sm-3 col-xs-10 pointer">
+    <img id="first-icon" class="icons animated" src='../images/icon/005-thermometer.png'>
+    <h4><b>{{HOME_ROW_1_TITLE | translate}}</b></h4>
+    <p>{{HOME_ROW_1 | translate}}</p>
+    <button  class="form-control btn-blue secondBlock">{{HOME_ROW_1_BTN | translate}}</button>
+  </div>
+  <div ng-click="OpenState('.service.mobile')" class="col-it-inf col-md-3 col-sm-3 col-xs-10 pointer">
+    <img id="second-icon" class="icons animated" src='../images/icon/003-bug.png'>
+    <h4><b>{{HOME_ROW_2_TITLE | translate}}</b></h4>
+    <p>{{HOME_ROW_2 | translate}}</p>
+    <button  class="form-control btn-blue secondBlock">{{HOME_ROW_2_BTN | translate}}</button>
+  </div>
+  <div ng-click="OpenState('.service.it')" class="col-it-inf col-md-3 col-sm-3 col-xs-10 pointer">
+    <img id="third-icon" class="icons animated" src='../images/icon/004-key.png'>
+    <h4><b>{{HOME_ROW_3_TITLE | translate}}</b></h4>
+    <p>{{HOME_ROW_3 | translate}}</p>
+    <button class="form-control btn-blue secondBlock">{{HOME_ROW_3_BTN | translate}}</button>
+  </div>
+</div>
+
+
+
+

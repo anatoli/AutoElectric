@@ -1,0 +1,138 @@
+.cancel{
+  width: 30px;
+  height: 30px;
+}
+.modal-body input::-webkit-input-placeholder {color:#04314D;}
+.modal-body input::-moz-placeholder          {color: #04314d;}/* Firefox 19+ */
+.modal-body input:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
+.modal-body input:-ms-input-placeholder      {color:#04314D;}
+
+.modal-body select::-webkit-input-placeholder {color:#04314D;}
+.modal-body select::-moz-placeholder          {color: #04314d;}/* Firefox 19+ */
+.modal-body select:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
+.modal-body select:-ms-input-placeholder      {color:#04314D;}
+
+.modal-body textarea::-webkit-input-placeholder {color:#04314D;}
+.modal-body textarea::-moz-placeholder          {color:#04314D;}/* Firefox 19+ */
+.modal-body textarea:-moz-placeholder           {color:#04314D;}/* Firefox 18- */
+.modal-body textarea:-ms-input-placeholder      {color:#04314D;}
+
+.modal-body{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.btn-top{
+  top: 0;
+}
+.modal-fonts{
+  font-family: Narrow;
+}
+.modal-content{
+  border-radius: 0;
+  width: 100%;
+}
+
+.modal-content-push{
+  border-radius: 0;
+  width: 100%;
+  border: 2px solid #4a95e5;
+}
+.left-header-div{
+  padding: 0.85%;
+  display: inline-block;
+  width: 25%;
+  background: #8f8f8f;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+.modal-footer >.btn-full-blue{
+ margin-left: 2%;
+
+}
+.modal-footer{
+  text-align: center;
+   border-top: none;
+  display: flex;
+}
+.font-modal-input p {
+  font-size: 12px;
+  line-height: 1;
+}
+.font-modal-input{
+  font-family: SegoeUIItalic;
+  margin-top: 30px;
+}
+.modal-body h4{
+  font-size: 25px;
+  color: #398be3;
+  text-align: center;
+}
+.file{
+  width: 70%;
+  font-size: 15px;
+}
+.div-file{
+  padding-left: 15px !important;
+}
+.btn-modal{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.fileform:hover .btn-blue{
+  border-radius: 0;
+  box-shadow: 3px 3px 9px 0px rgba(14, 14, 14, 0.6);
+  padding-top: 2px !important;
+}
+.fileform {
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.fileform .selectbutton {
+  background-color: #A2A3A3;
+  border: 1px solid #939494;
+  border-radius: 2px;
+  color: #FFFFFF;
+  float: right;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 2px 6px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.fileform #upload{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  font-size: 150px;
+  height: 30px;
+  z-index:20;
+}
+td .clip{
+  text-align: left !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+.uploadTable th{
+  text-align: center;
+}
+.uploadTable{
+  margin-top: 20px;
+}
+.headerUploader{
+  color: #04314D;
+}

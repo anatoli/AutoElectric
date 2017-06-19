@@ -1,0 +1,110 @@
+.oh-accordion span{
+  font-family: sans-serif;
+}
+.oh-accordion{
+  color: #fff;
+  background-color: #ed5623;
+}
+.background-example{
+  background-image: url(../../../images/service/evening_tao.jpg);
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-position: 48%;
+  font-family: SegoeUIRegular;
+}
+.comment-white-margin{
+  padding-top: 10px;
+  padding-bottom: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.uib-accordion-heading-it{
+
+
+}
+.panel-heading{
+  background-color:#04314D !important;
+  color: #fff!important;
+  font-family: SegoeUIRegular;
+}
+.panel-heading, .panel-body{
+  padding-left: 9%;
+}
+.panel-body>.comment-white{
+  background-color: rgba(255,255,255, 0.5);
+
+}
+.panel-body{
+  background-image:  url(../../../images/service/fantastic_blue_sky.jpg);
+  margin-left: 0;
+}
+.olli{
+  color: #ed5623;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: SegoeUIRegular;
+
+}
+
+.ulli{
+  padding-left: 2%;
+}
+.ulli li{
+  display: block;
+}
+.ulli p{
+  line-height: 0.3;
+  display: inline;
+}
+.ulli p span{
+  color: #04314D;
+  font-weight: 100;
+  font-style: initial;
+  font-size: 18px;
+  line-height: 1em;
+}
+.ulli-num{
+  float: inherit;
+  color: #ed5623;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: SegoeUIRegular;
+  top: 9px;
+  position: relative;
+  left: -10px;
+}
+
+.accordion-bgw{
+  padding-left: 24px;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 6.2%;
+}
+.accordion-toggle:hover, .accordion-toggle:focus{
+  text-decoration: none;
+  cursor: default;
+}
+.comment-white-margin h3{
+  color:#04314D
+}
+.img-footer-implementation{
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 10px;
+  line-height: 1.42857143;
+  border-radius: 0;
+  background: #8f8f8f;
+}
+.box-implementation{
+  overflow: hidden;
+  height: 205px;
+  margin-bottom: 15px;
+  line-height: 24px
+}
+.title-h{
+  font-family: segoeUIBold;
+  color: #04314D;
+}

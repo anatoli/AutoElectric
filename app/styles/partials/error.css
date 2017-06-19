@@ -1,0 +1,120 @@
+
+.text-error input::-webkit-input-placeholder {color:#fff; font-style: italic}
+.text-error input::-moz-placeholder          {color:#fff; font-style: italic}/* Firefox 19+ */
+.text-error input:-moz-placeholder           {color:#fff; font-style: italic}/* Firefox 18- */
+.text-error input:-ms-input-placeholder      {color:#fff; font-style: italic}
+
+.text-error input:focus {
+  border-color: #ffffff;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(240, 241, 243, 0.6);;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.09), 0 0 8px rgb(250, 251, 253);
+}
+.text-error input {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+}
+.text-error {
+  position: absolute;
+  text-align: center;
+  margin-left: 18%;
+  margin-top: 8%;
+  color: #fff;
+  z-index: 2;
+}
+.background-error{
+  position: relative;
+  width: 100%;
+  height: 75%;
+}
+.background-error img video{
+  width: 100%;
+  z-index: 0;
+}
+.notification{
+  margin-top: 20px;
+}
+.error-title{
+  font-family: Narrow;
+  color: #ed5623;
+  text-shadow: 0px 0px 0.5px rgba(0,0,0,0.5), 0 0 0.1em black;
+}
+.footer-error{
+  margin-left: 0px !important;
+  /*margin-top: 10px;*/
+  /*margin-right: 0;*/
+  margin: 10px 0 auto 20px;
+  position: absolute;
+  top: -120px;
+  z-index: 38;
+  border-top: 1px solid #fff;
+  padding: 1%;
+  color: #fff;
+}
+.footer-error img{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  float: left;
+}
+.dop-margin-email p{
+  margin-top: 3%;
+}
+.dop-margin-email{
+  margin-left: 18%;
+}
+.phone-404 .number p{
+  font-size: 14px;
+}
+.phone-404 .number{
+  padding-left: 6%;
+}
+.phone-404 .phone{
+  padding-left: 22%;
+}
+
+video{
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  /*transform: translateX(-50%) translateY(-50%);*/
+  background: url('../../images/404/office_grey_min.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.video-bg{
+  background: #000;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 99.5%;
+  bottom: 0;
+  left: 0;
+  opacity: .7;
+}
+.bold{
+  font-weight: bold;
+}
+.narrow{
+  font-family: Narrow;
+}
+.segoe-regular{
+  font-family: SegoeUIRegular;
+}
+.error-message-btn{
+  width: 100%;
+  font-size: 16px;
+}
+.font-size-32{
+  font-size: 32px;
+}
+.message-block{
+  margin-left: 14%;
+}
+.footer-404-margin-img img{
+ margin-right: 5%;
+}

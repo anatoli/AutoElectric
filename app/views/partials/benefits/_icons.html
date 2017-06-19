@@ -1,0 +1,21 @@
+<div class="row block-default none-row">
+  <h4 class="rubric it-title">{{Benefits_Icon_Title | translate}}</h4>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.employees'}">
+    <img id="first-icon" class="icons animated center" src='../../images/icons/professional.png'>
+    <h3><b>{{Benefits_Icon_icon_1_title | translate}}</b></h3>
+    <p style="font-size: 16px;">{{Benefits_Icon_icon_1_description | translate}}</p>
+    <div ng-click="Go('.employees')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Benefits_Icon_icon_1_btn|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class="col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.innovations'}">
+    <img id="second-icon" class="icons animated center" src='../../images/icons/inovation.png'>
+    <h3><b>{{Benefits_Icon_icon_2_title | translate}}</b></h3>
+    <p style="font-size: 16px;">{{Benefits_Icon_icon_2_description | translate}}</p>
+    <div ng-click="Go('.innovations')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico"> {{Benefits_Icon_icon_2_btn|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon " ng-class="{'act':state=='.standards'}">
+    <img id="third-icon" class="icons animated center" src='../../images/icons/business.png'>
+    <h3><b>{{Benefits_Icon_icon_3_title | translate}}</b></h3>
+    <p style="font-size: 16px;">{{Benefits_Icon_icon_3_description | translate}}</p>
+    <div ng-click="Go('.standards')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Benefits_Icon_icon_3_btn|translate}}</div>
+  </div>
+</div>

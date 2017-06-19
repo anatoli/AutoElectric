@@ -1,0 +1,198 @@
+/* Responsive: Portrait tablets and up */
+/*@media screen and (min-width: 320px)and (max-width: 640px){*/
+  /*.col-xxs{*/
+    /*width: 50%;*/
+  /*}*/
+  /*.mobile-style-block{*/
+    /*margin-left: 9.2%;*/
+    /*margin-right: 0;*/
+  /*}*/
+/*}*/
+
+
+/*@media (max-width: 450px) {*/
+
+  /*.background-company{*/
+    /*!* background-size: cover; *!*/
+    /*background-repeat: no-repeat !important;*/
+    /*!* background-attachment: fixed; *!*/
+    /*background-position: 58% 78px!important;*/
+  /*}*/
+/*}*/
+/*@media (max-width: 360px) {*/
+  /*.media-fonts-350{*/
+    /*font-size: 16px !important;*/
+  /*}*/
+
+/*}*/
+/*@media(max-width: 768px) and (min-width: 451px){*/
+  /*.background-company{*/
+    /*!* background-size: cover; *!*/
+    /*background-repeat: no-repeat !important;*/
+    /*!* background-attachment: fixed; *!*/
+    /*background-position: 48% ;*/
+  /*}*/
+/*}*/
+/*@media (max-width: 768px) {*/
+  /*.media-block{*/
+    /*display:none;*/
+  /*}*/
+  /*.media-block-up{*/
+    /*display:block;*/
+  /*}*/
+
+  /*.first button{*/
+    /*margin-left: 0;*/
+  /*}*/
+  /*.questions .call{*/
+    /*margin-left: 0;*/
+  /*}*/
+  /*.font-size-32 {*/
+    /*font-size: 25px !important;*/
+  /*}*/
+  /*.carousel-indicators .active {*/
+    /*width: 20px !important;*/
+    /*height: 20px !important;*/
+    /*margin-left: 4px !important;*/
+  /*}*/
+  /*.carousel-indicators li {*/
+    /*width: 19px !important;*/
+    /*height: 19px !important;*/
+    /*margin-left: 4px !important;*/
+  /*}*/
+  /*.questions-2{*/
+    /*display: block!important;*/
+  /*}*/
+  /*.display-none{*/
+    /*display: none !important;*/
+  /*}*/
+  /*.text-left-mobile{*/
+    /*text-align: left !important;*/
+  /*}*/
+  /*.mobile-line-height{*/
+    /*line-height: inherit !important;*/
+  /*}*/
+
+
+  /*.item {*/
+    /*height: 382px !important;*/
+  /*}*/
+  /*.slide-1-block-background {*/
+    /*background: rgba( 255,255,255, 0.8) !important;*/
+  /*}*/
+  /*.slide-1-block-background h1{*/
+    /*font-size: 28px !important;*/
+  /*}*/
+  /*.col-it-inf {*/
+    /*margin-top: 14%;*/
+  /*}*/
+  /*.text-error button.btn-full-orange {*/
+    /*font-size: 13px;*/
+  /*}*/
+  /*.text-error input{*/
+    /*font-size: 13px;*/
+  /*}*/
+  /*h4.segoe-regular{*/
+    /*font-size: 12px;*/
+  /*}*/
+  /*.text-error h3.segoe-regular{*/
+    /*font-size: 12px;*/
+    /*margin-bottom: 0;*/
+    /*margin-top: 3%;*/
+  /*}*/
+  /*.text-error h3 h4{*/
+    /*margin-top: 5% !important;*/
+    /*margin-bottom: 1% !important;*/
+  /*}*/
+  /*.text-error {*/
+    /*margin-left: 2% !important;*/
+    /*margin-top: 0 !important;*/
+  /*}*/
+  /*.bold{*/
+    /*font-weight: normal !important;*/
+  /*}*/
+  /*.message-block {*/
+    /*margin-left: 0% !important;*/
+    /*margin-right: 0% !important;*/
+  /*}*/
+  /*.footer-error {*/
+    /*!*top: -190px !important;*!*/
+    /*top: 51% !important;*/
+  /*}*/
+  /*.img-height{*/
+    /*height: 385px;*/
+  /*}*/
+  /*.dop-margin-email {*/
+    /*margin-left: 5% !important;*/
+  /*}*/
+  /*.error-title{*/
+    /*margin-top: 0px;*/
+    /*margin-bottom: 0px;*/
+  /*}*/
+  /*.video-bg {*/
+    /*opacity: 0.3 !important;*/
+  /*}*/
+  /*.n-bg-sl{*/
+    /*display: none;*/
+  /*}*/
+  /*.background-slide{*/
+    /*display: block !important;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*height: 100%;*/
+    /*width: 100%*/
+  /*}*/
+
+
+  /*.background-slide-3{*/
+    /*background-image: url(../images/services.png);*/
+  /*}*/
+  /*.background-slide-1{*/
+    /*background-image: url(../images/solutions.jpg);*/
+  /*}*/
+  /*.background-slide-2{*/
+    /*background-image: url(../images/telecom.jpg);*/
+  /*}*/
+
+/*}*/
+@media (min-width: 768px) {
+  /*.container {*/
+    /*width: 730px;*/
+  /*}*/
+
+  .media-block-up{
+    display:none;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .language{
+    padding: 0% 8%;
+  }
+  .borderLeftLeng{
+    /*padding-left: 1%;*/
+  }
+  .padding{
+    height: 100%;
+    padding: 2% 0;
+  }
+  .nav-font{
+    font-size: 0.8em;
+  }
+  .item {
+    height: 425px !important;
+  }
+
+}

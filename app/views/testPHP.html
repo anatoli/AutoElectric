@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  .sidebarForm {
+    background: #f6f6f6;
+    box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    width: 420px;
+  }
+
+  #cor5 #cor6 #cor7 #cor8 {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+  .sidebarForm h4 {
+    font: 14px Verdana;
+    color: #333333;
+    text-align: left;
+    padding: 10px 10px 0 10px;
+  }
+
+  .sidebarForm label {
+    font: 12px Verdana;
+    color: #333;
+    padding: 10px;
+  }
+
+  .sidebarForm .input {
+    width: 170px;
+    height: 20px;
+    overflow: hidden;
+    background: white;
+    border: solid 1px #DFE2E5;
+    margin: 5px 0 10px 10px;
+    box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+  }
+
+  .sidebarForm .input input {
+    width: 165px;
+    height: 26px;
+    background: white;
+    margin: -3px 0 0 -5px;
+    padding: 0px 8px;
+    border: none;
+    background: transparent;
+  }
+
+  .sidebarForm .textarea {
+    height: 70px;
+    width: 320px;
+    overflow: hidden;
+    background: white;
+    border: solid 1px #DFE2E5;
+    margin: 5px 0 10px 10px;
+    box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+  }
+
+  .sidebarForm .textarea textarea {
+    width: 316px;
+    height: 66px;
+    background: white;
+    border: none;
+    resize:none;
+  }
+
+  .sidebarForm button {
+    border: 2px #ccc solid;
+    width: 150px;
+    height: 25px;
+    font: 12px Verdana;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #cc0000;
+    padding-bottom: 2px;
+    margin: 5px 0 15px 135px;
+  }
+</style>
+<!--<script>-->
+  <!--$(document).ready(function() {-->
+<!--// Форма обратной связи................................./-->
+
+    <!--var regVr22 = "<div><img style="margin-bottom:-4px;" src="../load.gif" alt="Отправка..." width="16" height="16"><span style="font: 11px Verdana; color:#333; margin-left:6px;">Сообщение обрабатывается...</span></div><br>";-->
+
+    <!--$("#send").click(function(){-->
+      <!--alert('Сообщение отправляется!')-->
+      <!--$("#loadBar").html(regVr22).show();-->
+      <!--var posName = $("#posName").val();-->
+      <!--var posEmail = $("#posEmail").val();-->
+      <!--var posText = $("#posText").val();-->
+      <!--$.ajax({-->
+        <!--type: "POST",-->
+        <!--url: "../send.php",-->
+        <!--data: {"posName": posName, "posEmail": posEmail, "posText": posText},-->
+        <!--cache: false,-->
+        <!--success: function(response){-->
+          <!--var messageResp = "<p style="font-family:Verdana; font-size:11px; color:green; border:1px solid #00CC00; padding:10px; margin:20px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; background-color:#fff;">Спасибо, <strong>";-->
+          <!--var resultStat = "!</strong> Ваше сообщение отправлено!</p>";-->
+          <!--var oll = (messageResp + posName + resultStat);-->
+          <!--if(response == 1){-->
+            <!--alert('сообщение доставлено')-->
+            <!--$("#loadBar").html(oll).fadeIn(3000);-->
+            <!--$("#posName").val("");-->
+            <!--$("#posEmail").val("");-->
+            <!--$("#posText").val("");-->
+          <!--} else {-->
+            <!--alert('сообщение отвалилось')-->
+            <!--$("#loadBar").html(response).fadeIn(3000); }-->
+        <!--}-->
+      <!--});-->
+      <!--return false;-->
+    <!--});-->
+  <!--});-->
+<!--&lt;!&ndash;</script>-->
+<body>
+
+  <div align="left" id="cor6" class="sidebarForm">
+  <h4>Задать новый вопрос:</h4>
+  <div align="center" id="loadBar"></div>
+  <form action="#" method="post" id="cForm2">
+
+    <label>Ваше имя:</label>
+    <div class="input" id="cor7">
+      <input value="" id="posName" type="text">
+    </div>
+
+    <label>Ваш email:</label>
+    <div class="input" id="cor8">
+      <input value="" id="posEmail" type="text">
+    </div>
+
+    <label>Ваше сообщение:</label>
+    <div class="textarea" id="cor5"><textarea id="posText"></textarea></div>
+
+    <button type="button" id="send">Отправить --></button>
+
+  </form>
+  </div>
+
+</body>
+</html>

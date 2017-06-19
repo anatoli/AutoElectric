@@ -1,0 +1,57 @@
+<div class="row block-default none-row">
+  <h4 class="rubric it-title">{{SecondPage_Icons_Title | translate}}</h4>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.about'}">
+    <img id="first-icon" class="icons center" src='../../images/icons/calendar.png'>
+    <div class="calendar" id="sch" data-start="2006" data-num="2017">2006</div>
+    <h3><b>{{SecondPage_Icons_Header_ICO_1 | translate}}</b></h3>
+    <div class="icons_descriptions">
+      <p style="font-size: 16px;">{{SecondPage_Icons_Text_ICO_1 | translate}}</p>
+    </div>
+    <div ng-click="Go('.about')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{SecondPage_Icons_Btn_ICO_1|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class="col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.value'}">
+    <img id="second-icon" class="icons center" src='../../images/icons/teame.png'>
+    <div class="teame">&#215<span id="sch2" data-start="1" data-num="10">1</span></div>
+    <h3><b>{{SecondPage_Icons_Header_ICO_2 | translate}}</b></h3>
+    <div class="icons_descriptions">
+      <p style="font-size: 16px;">{{SecondPage_Icons_Text_ICO_2 | translate}}</p>
+    </div>
+    <div ng-click="Go('.value')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{SecondPage_Icons_Btn_ICO_2|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.team'}">
+    <img id="third-icon" class="icons center" src='../../images/icons/case.png'>
+    <div class="case" id="sch3" data-start="100" data-num="362"></div>
+    <h3><b>{{SecondPage_Icons_Header_ICO_3 | translate}}</b></h3>
+    <div class="icons_descriptions">
+      <p style="font-size: 16px;">{{SecondPage_Icons_Text_ICO_3 | translate}}</p>
+    </div>
+    <div ng-click="Go('.team')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{SecondPage_Icons_Btn_ICO_3|translate}}</div>
+  </div>
+</div>
+<script>
+  var time = 4;
+
+  var num = function(){
+    var
+      num = $(this).data('num'),
+      start= $(this).data('start') ? $(this).data('start'): 0,
+      step = 1000 * time / (num-start),
+      that = $(this),
+      int = setInterval(function(){
+        if (start <= num) {
+          that.html(start);
+        }
+        else {
+          clearInterval(int);
+        }
+        start++;
+      },step);
+  }
+
+
+//  $('#sch').each(num);
+  setTimeout(function(){$('#sch').each(num);}, 10000);
+  setTimeout(function(){$('#sch2').each(num);}, 3000);
+  setTimeout(function(){$('#sch3').each(num);}, 6000);
+
+</script>

@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12 oh-accordion ">
+    <h3 class="rubric narrow">{{IT_Implementation_OrangeTitle_1 | translate}}  &nbsp;&nbsp;<span style="font-family: SegoeUIRegular">{{Implementation_Project_5_Title_1 | translate}}</span></h3>
+  </div>
+  <div class="col-md-12 col-sm-12 col-xs-12 background-example">
+    <div class="row rubric comment-white comment-white-margin ">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <h3><b>{{Implementation_All_Title_1 | translate}}</b>
+          {{Implementation_Project_5_Client | translate}}
+        </h3></br>
+        <p class="goal-p">{{Implementation_Project_5_Description_1 | translate}}</p></br>
+        <h3><b>{{Implementation_All_Title_2 | translate}} </b>
+        </h3></br>
+        <p class="goal-p">{{Implementation_Project_5_Description_2 | translate}}</p></br>
+
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <h3><b>{{Implementation_All_Title_3_1 | translate}}</b> {{Implementation_All_Title_3_2 | translate}}
+        </h3></br>
+        <p class="goal-p">{{Implementation_Project_5_Description_3 | translate}}</p></br>
+        <h3><b>{{Implementation_All_Title_4 | translate}} </b></h3></br>
+        <p class="goal-p">{{Implementation_Project_5_Description_4 | translate}}</p></br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<uib-accordion close-others="oneAtATime">
+  <div uib-accordion-group class="panel-default uib-accordion-heading-it " is-open="status.open">
+    <uib-accordion-heading>
+      <h3 style="display: table-cell">{{Mobile_Cdr_Accordion_Title | translate}}</h3> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-up': status.open, 'glyphicon-chevron-down': !status.open}"></i>
+    </uib-accordion-heading>
+    <div class="row comment-white comment-white-margin accordion-bgw ">
+       <ul class="ulli">
+         <li><span class="ulli-num">1</span><p><span>{{Implementation_Project_5_li_1 | translate}}</span></p></li>
+         <li><span class="ulli-num">2</span><p><span>{{Implementation_Project_5_li_2 | translate}}</span></p></li>
+         <li><span class="ulli-num">3</span><p><span>{{Implementation_Project_5_li_3 | translate}}</span></p></li>
+         <li><span class="ulli-num">4</span><p><span>{{Implementation_Project_5_li_4 | translate}}</span></p></li>
+       </ul>
+     </div>
+  </div>
+</uib-accordion>

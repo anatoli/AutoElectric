@@ -1,0 +1,16 @@
+.guaranties{
+  font-size: 18px !important;
+}
+.background-benefits {
+  background-image: url(../../images/columns_benefits.jpg);
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-position: 48%;
+  font-family: SegoeUIRegular;
+}
+.certificate{
+  height: 400px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}

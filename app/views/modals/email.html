@@ -1,0 +1,152 @@
+<form name="form">
+  <div class="modal-fonts">
+    <div class="">
+      <div class="modal-title float-left left-header-div" ng-if="mod=='query'">
+        {{Modal_Header_1 |translate}}
+      </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='summary'">
+        {{Modal_Header_2 |translate}}
+      </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='call'">
+        {{Modal_Header_3 |translate}}
+      </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='comment'">
+        {{Modal_Header_4 |translate}}
+      </div>
+      <div class="modal-title float-left left-header-div" ng-if="mod=='congratulation'">
+        {{Modal_Header_5 |translate}}
+      </div>
+      <div class="pull-right">
+        <button type="button " ng-click="cancel()" class="btn btn-full-orange btn-radius glyphicon glyphicon-remove btn-top">
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <h4 ng-if="mod=='call'">{{Modal_Title_11 |translate}}</br> {{Modal_Title_12 |translate}} </h4>
+      <h4 ng-if="mod=='summary'">{{Modal_Title_21 |translate}}</br> {{Modal_Title_22 |translate}}</br> {{Modal_Title_23 |translate}} </h4>
+      <h4  ng-if="mod=='query'">{{Modal_Title_31 |translate}}</br> {{Modal_Title_32 |translate}} </h4>
+      <h4  ng-if="mod=='comment'">{{Modal_Title_41 |translate}}</br> {{Modal_Title_42 |translate}} </h4>
+      <h4  ng-if="mod=='congratulation'">{{Modal_Title_51 |translate}}</br> {{Modal_Title_52 |translate}} </h4>
+
+    <input  ng-model="name" class="form-control font-modal-input" placeholder="{{Modal_Name_plh |translate}}">
+
+    <input  ng-model="email" class="form-control font-modal-input" placeholder="E-mail*" ng-show="mod!=='call'">
+
+    <input ng-model="phone" class="form-control font-modal-input" placeholder="{{Modal_Phone_plh |translate}}">
+    <input ng-model="dateTime" class="form-control font-modal-input" placeholder="{{Modal_Datetime_plh |translate}}" ng-show="mod=='call'">
+    <input ng-model="company"class="form-control font-modal-input" placeholder="{{Modal_Company_plh |translate}}" ng-show="mod=='query'">
+    <select ng-model="selectVok" class="form-control font-modal-input" ng-show="mod=='summary'">
+      <option value="" disabled selected>{{Modal_Select_Title |translate}}</option>
+      <option value="Мобильные приложения">{{Modal_Select_1 |translate}}</option>
+      <option value="Мат. анализ">{{Modal_Select_2 |translate}}</option>
+      </select>
+
+      <!--<select class="form-control"-->
+              <!--ng-model="directory.record.created.memberType"-->
+              <!--ng-options="memberType.name for memberType in directory.memberTypes track by memberType.id">-->
+        <!--<option value="null">-</option>-->
+      <!--</select>-->
+
+
+    <textarea class="form-control font-modal-input" name="message" ng-model="message" placeholder="{{Modal_Area_plh |translate}}"></textarea>
+      <div class="row">
+        <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+          <!--<form>-->
+            <!--<div class="g-recaptcha" data-sitekey="6LcNtgcUAAAAANdJRQs7oHSZAYHRjTkJBqZt0a96"></div>-->
+          <!--</form>-->
+          <!--<input class="form-control font-modal-input" placeholder="Введите код">-->
+        <!--</div>-->
+        <!--<div class="col-md-6 col-sm-6 col-xs-12">-->
+          <!--<input class="form-control font-modal-input" placeholder="">-->
+        <!--</div>-->
+
+      <!--</div>-->
+      <!--<div class="row">-->
+        <div class="col-md-6 col-sm-6 col-xs-12 font-modal-input div-file">
+          <!--<button type="button " class="form-control btn-blue btn-radius file">{{Modal_Btn_file |translate}}-->
+          <!--</button>-->
+          <div class="fileform">
+            <button type="button " class="form-control btn-blue btn-radius file">{{Modal_Btn_file |translate}}
+            </button>
+            <input id="upload" type="file" name="upload" type="file" nv-file-select="" uploader="uploader"  />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 font-modal-input">
+         <p>{{Modal_Description_1 |translate}}</p>
+         <p>{{Modal_Description_2 |translate}}</p>
+        </div>
+<!--/////////////////************/////////-->
+        <div ng-show="href"><a ng-href="{{href}}" download>Скачать файл</a></div>
+
+
+        <div class="col-md-12" style="margin-bottom: 40px">
+
+
+          <!--<p>Queue length: {{ uploader.queue.length }}</p>-->
+
+          <table class="table uploadTable" ng-show="uploader.queue.length>0">
+            <thead class="headerUploader">
+            <tr>
+              <th width="50%" >{{Modal_TableHeader_Name | translate}}</th>
+              <th ng-show="uploader.isHTML5">{{Modal_TableHeader_Size | translate}}</th>
+              <!--<th ng-show="uploader.isHTML5">Загружено</th>-->
+              <th>{{Modal_TableHeader_Status | translate}}</th>
+              <th>{{Modal_TableHeader_Actions | translate}}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in uploader.queue">
+              <td><strong><div title="{{ item.file.name }}" style="width: 250px" class="clip">{{ item.file.name }}</div></strong></td>
+              <td style="text-align: center" ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+              <td class="text-center">
+                <span ng-show="item.isSuccess"><i style="color:#398be3;" class="glyphicon glyphicon-ok"></i></span>
+                <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                <span ng-show="item.isError"><i style="color:#d9534f;" class="glyphicon glyphicon-remove"></i></span>
+              </td>
+              <td nowrap>
+                <button type="button" class="form-control btn-blue btn-xs" ng-if="!item.isSuccess && !item.isCancel && !item.isError" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                  <span class="">{{Modal_UploaderBtn_1 |translate}}</span>
+                </button>
+                <button type="button" class="form-control btn-orange btn-xs" ng-if="item.isSuccess || item.isCancel || item.isError" ng-click="item.remove()">
+                  <span class="">{{Modal_UploaderBtn_2 |translate}}</span>
+                </button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <div ng-show="bar">
+            <div>
+             Loading:
+              <div class="progress" style="">
+                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+              </div>
+            </div>
+            <!--<button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length">-->
+              <!--<span class="glyphicon glyphicon-upload"></span> Upload all-->
+            <!--</button>-->
+            <!--<button type="button" class="btn btn-warning btn-s" ng-click="uploader.cancelAll()" ng-disabled="!uploader.isUploading">-->
+              <!--<span class="glyphicon glyphicon-ban-circle"></span> Cancel all-->
+            <!--</button>-->
+            <!--<button type="button" class="btn btn-danger btn-s" ng-click="uploader.clearQueue()" ng-disabled="!uploader.queue.length">-->
+              <!--<span class="glyphicon glyphicon-trash"></span> Remove all-->
+            <!--</button>-->
+          </div>
+
+        </div>
+
+      </div>
+<!--/////////////////************/////////-->
+
+      </div>
+
+    <div class=" row modal-footer">
+      <div class="col-lg-4 col-md-4 col-sm-7 col-xs-10 center-block text-center">
+        <button ng-click="PushEmail(mod)" class="center-block  form-control btn-full-blue btn-radius btn-modal">{{Modal_Btn_push |translate}}   </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</form>
+

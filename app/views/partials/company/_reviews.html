@@ -1,0 +1,131 @@
+<!-- Карусель -->
+<div id="myCarousel" class="carousel slide first-fixed-block " data-interval="3000" data-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+    <div class="item active">
+      <div class="background-slide background-slide-1"></div>
+      <img class="none-max-width n-bg-sl" src="../../images/heandsUp.jpg">
+      <div class="row slide-1 captions">
+        <div class="col-md-6 col-sm-6 col-xs-6 margin-slide">
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-8 col-xs-11 margin-slide slide-1">
+          <div class=" slide-1-block-background slide-1-block-background-company">
+            <h1>{{SecondPage_Comments_Global_Title| translate}} </br></h1>
+            <p>{{SecondPage_Comments_Global_description_1| translate}}</p>
+          </div>
+          <div class="row margin-slide">
+            <!--<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">-->
+              <!--<button ng-click="openDetails()" class=" form-control btn-full-orange">{{SecondPage_Slider_Btn_1 |translate}}</button>-->
+            <!--</div>-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <button class="form-control btn-full-orange" ng-click="openModal('comment')">{{SecondPage_Comments_Btn_2|translate}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ncy-breadcrumb class="breadcrumb-header"></div>
+  <div class="none-row block-default company" >
+    <div class="rubric comment-white-details block-comment">
+      <div class="row rubric comment-white">
+      <div class="col-md-5 padding-top-30">
+        <h2 class="npt">{{SecondPage_Comments_Title |translate}}</h2>
+        <em><p class="goal-p">{{SecondPage_Comments_Descriptions_11 |translate}}</p></em></br>
+        <b><em><p class="goal-p">{{SecondPage_Comments_Descriptions_12 |translate}}</p></em></b>
+      </div>
+      <div class="col-md-7 padding-tl-30 " ng-class="{'full-size': first, 'box':!first  }">
+        <img class="img-relative" src="../../../images/company/coma.png">
+        <p class="goal-p">{{SecondPage_Comments_Text_11 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_12 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_13 |translate}}</p>
+      </div>
+    </div>
+      <div class="row rubric comment-white-details">
+      <div class=" col-md-5"></div>
+      <div class=" col-md-3">
+        <button class="form-control btn-blue " ng-show="!first " ng-click="DetailsOpen('first')">{{SecondPage_Comments_Btn_1|translate}}</button>
+      </div>
+    </div>
+    </div>
+    <div class="rubric comment-white-details block-comment ">
+      <div class="row rubric comment-white">
+      <div class="col-md-5 padding-top-30">
+        <h2 class="npt">{{SecondPage_Comments_Title_2 |translate}}</h2>
+        <em><p class="goal-p">{{SecondPage_Comments_Descriptions_21 |translate}}</p></em></br>
+        <b><em><p class="goal-p">{{SecondPage_Comments_Descriptions_22 |translate}}</p></em></b>
+      </div>
+      <div class="col-md-7 padding-tl-30 " ng-class="{'full-size': second, 'box':!second }">
+        <img class="img-relative" src="../../../images/company/coma.png">
+        <p class="goal-p">{{SecondPage_Comments_Text_21 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_22 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_23 |translate}}</p>
+      </div>
+    </div>
+      <div class="row rubric comment-white-details">
+      <div class=" col-md-5"></div>
+      <div class="col-md-3">
+        <button class="form-control btn-blue " ng-show="!second" ng-click="DetailsOpen('second')">{{SecondPage_Comments_Btn_1|translate}}</button>
+      </div>
+    </div>
+    </div>
+    <div class="rubric comment-white-details block-comment ">
+      <div class="row rubric comment-white">
+      <div class="col-md-5 padding-top-30">
+        <h2 class="npt">{{SecondPage_Comments_Title_3 |translate}}</h2>
+        <em><p class="goal-p">{{SecondPage_Comments_Descriptions_31 |translate}}</p></em></br>
+        <b><em><p class="goal-p">{{SecondPage_Comments_Descriptions_32 |translate}}</p></em></b>
+      </div>
+      <div class="col-md-7 padding-tl-30 " ng-class="{'full-size': third, 'box':!third }">
+        <img class="img-relative" src="../../../images/company/coma.png">
+        <p class="goal-p">{{SecondPage_Comments_Text_31 |translate}}</p></br></br>
+      </div>
+    </div>
+      <div class="row rubric comment-white-details">
+      <div class=" col-md-5"></div>
+      <div class="col-md-3">
+        <button class="form-control btn-blue " ng-show="!third" ng-click="DetailsOpen('third')">{{SecondPage_Comments_Btn_1|translate}}</button>
+      </div>
+    </div>
+    </div>
+    <div class="rubric comment-white-details ">
+      <div class="row rubric comment-white">
+      <div class="col-md-5 padding-top-30">
+        <h2 class="npt">{{SecondPage_Comments_Title_4 |translate}}</h2>
+        <em><p class="goal-p">{{SecondPage_Comments_Descriptions_41 |translate}}</p></em></br>
+        <b><em><p class="goal-p">{{SecondPage_Comments_Descriptions_42 |translate}}</p></em></b>
+      </div>
+      <div class="col-md-7 padding-tl-30 " ng-class="{'full-size': fourth, 'box':!fourth }">
+        <img class="img-relative" src="../../../images/company/coma.png">
+        <p class="goal-p">{{SecondPage_Comments_Text_41 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_42 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_43 |translate}}</p></br></br>
+        <p class="goal-p">{{SecondPage_Comments_Text_44 |translate}}</p></br></br>
+      </div>
+    </div>
+      <div class="row rubric comment-white-details">
+      <div class=" col-md-5"></div>
+      <div class="col-md-3">
+        <button class="form-control btn-blue " ng-show="!fourth" ng-click="DetailsOpen('fourth')">{{SecondPage_Comments_Btn_1|translate}}</button>
+      </div>
+    </div>
+    </div>
+    <!--<div class="row rubric comment-white">-->
+      <!--<div class="col-md-5">-->
+        <!--<h2 class="npt">{{SecondPage_Comments_Title |translate}}</h2>-->
+        <!--<p class="goal-p">{{SecondPage_Comments_Descriptions |translate}}</p>-->
+      <!--</div>-->
+      <!--<div class="col-md-7 " ng-class="{'full-size': third, 'box':!third }">-->
+        <!--<p class="goal-p">{{SecondPage_Comments_Text |translate}}В ноябре 2006 года наша компания заявила о себе в сфере высоких технологий. Мы прошли захватывающий путь.-->
+        <!--</p>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row rubric comment-white-details">-->
+      <!--<div class=" col-md-5"></div>-->
+      <!--<div class="col-md-3">-->
+        <!--<button class="form-control btn-orange " ng-click="DetailsOpen('third')">Details...</button>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  </div>
+</div>

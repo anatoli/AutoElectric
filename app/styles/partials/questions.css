@@ -1,0 +1,36 @@
+.questions h2{
+  padding-top: 20px !important;
+  font-size: 30px !important;
+  text-align:center;
+  color: #ed5623 ;
+}
+.questions h3{
+ line-height: inherit;
+}
+.phone-margin .phone-img{
+  padding: 2% 0;
+}
+.phone-margin .phone{
+  margin-left: 32%;
+}
+.questions .call{
+  margin-left: 30%;
+}
+.questions button{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.first button{
+  margin-left: 15%;
+}
+.questions-2{
+  display: none;
+}
+.display-none{
+  display: block;
+}
+.background-questions{
+  background-image:url(../../images/questions.jpg); background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}

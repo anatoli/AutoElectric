@@ -1,0 +1,21 @@
+<div class="row block-default none-row">
+  <h4 class="rubric it-title">{{Mobile_Icon_Title | translate}}</h4>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.cdr'}">
+    <img id="first-icon" class="icons animated center" src='../../images/icons/10_years.png'>
+    <h3><b>{{Mobile_Icon_icon_1_title | translate}}</b></h3>
+    <p style="font-size: 16px;">{{Mobile_Icon_icon_1_description | translate}}</p>
+    <div ng-click="Go('.cdr')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Mobile_Icon_icon_1_btn|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class="col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon" ng-class="{'act':state=='.session'}">
+    <img id="second-icon" class="icons animated center" src='../../images/icons/50_project.png'>
+    <h3><b>{{Mobile_Icon_icon_2_title | translate}}</b></h3>
+    <p style="font-size: 16px;">{{Mobile_Icon_icon_2_description | translate}}</p>
+    <div ng-click="Go('.session')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Mobile_Icon_icon_2_btn|translate}}</div>
+  </div>
+  <div ng-click="openDetails()" class=" col-md-4 col-sm-4 col-xs-10 pointer text-center padding-icon " ng-class="{'act':state=='.audit'}">
+    <img id="third-icon" class="icons animated center" src='../../images/icons/complex.png'>
+    <h3><b>{{Mobile_Icon_icon_3_title | translate}}</b></h3>
+    <p style="font-size: 16px;">{{Mobile_Icon_icon_3_description | translate}}</p>
+    <div ng-click="Go('.audit')" class="generatecssdotcom_arrow btn_arrow form-control btn-orange-ico">{{Mobile_Icon_icon_3_btn|translate}}</div>
+  </div>
+</div>
