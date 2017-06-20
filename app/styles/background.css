@@ -1,0 +1,15 @@
+.background {
+  background: black url('../images/auto-bg.jpg');
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  box-shadow: 0 0 15px;
+  background-position: inherit;
+  background-size: cover;
+}
+
+.border-separator-bottom {
+  border-bottom: 1px solid #fff;
+}
+.border-separator-top {
+  border-top: 1px solid #fff;
+}

@@ -1,56 +1,60 @@
 <div class="footer-top">
   <div class="container">
-    <div class="row">
+    <div class="row none-row block-default questions background-questions ng-scope" style="color: #faebd7;">
 
+      <h2 class="text-left-mobile ng-binding" style="color: #faebd7;">Мы ждем вас</h2>
+      <div class="row display-none">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h3 style="text-align: center" class="ng-binding">Напишите нам,<br>и мы обязательно свяжемся с вами </h3>
 
-      <div class="col-md-6 footer-widget2">
-        <span>ИП Знорко Ю.Г. </span>
-        <br>
-        <span>г.Минск УНП 192782722</span>
-        <br>
-        <span>6565700@gmail.com</span>
-        <br>
-        <span>+375 29 65 65 700</span>
-        <span>+375 29 55 65 700</span>
-      </div>
-
-      <div class="col-md-6 footer-widget3">
-        <h3>Latest Tweets</h3>
-        <div class="single-tweet">
-          <div class="col-xs-1 no-padding">
-            <i class="fa fa-twitter"></i>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h3 style="text-align: center" class="ng-binding">Или звоните нам</h3>
+          <!-- ngInclude: --><ng-include src="'/views/partials/_phoneNumber.html'" class="phone-margin ng-scope"><div class="row phone ng-scope">
+          <div class="col-md-1 col-sm-1 col-xs-1 phone-img">
+            <img src="../../images/phone.png">
           </div>
-          <div class="tweet-content col-xs-11">
-            <p><a href="#">@Jorbadan</a> Please see our support forum <a href="#">koitamna.co.bd</a></p>
-            <span>3 days ago</span>
+          <div class="col-md-10 col-sm-10 col-xs-10 number">
+            <p>+375 29 65 65 700</p>
+            <p>+375 29 65 65 700</p>
           </div>
         </div>
-        <div class="single-tweet">
-          <div class="col-xs-1 no-padding">
-            <i class="fa fa-twitter"></i>
-          </div>
-          <div class="tweet-content col-xs-11">
-            <p><a href="#">@Jorbadan</a> Please see our support forum <a href="#">koitamna.co.bd</a></p>
-            <span>3 days ago</span>
-          </div>
-        </div>
-        <div class="single-tweet">
-          <div class="col-xs-1 no-padding">
-            <i class="fa fa-twitter"></i>
-          </div>
-          <div class="tweet-content col-xs-11">
-            <p><a href="#">@Jorbadan</a> Please see our support forum <a href="#">koitamna.co.bd</a></p>
-            <span>3 days ago</span>
-          </div>
+        </ng-include>
+
         </div>
       </div>
 
+      <div class="questions-2">
+        <h4 class="media-fonts-350 segoe-regular mobile-line-height dark-blue-color ng-binding">Напишите нам, и мы обязательно<br>свяжемся с вами. 3воните нам</h4>
+        <div class="row">
+          <div class="col-xs-6" style="text-align: center">
+            <h4 class="media-fonts-350"><b>+375 29 65 65 700</b></h4>
+          </div>
+          <div class="col-xs-6">
+            <h4 class="media-fonts-350"><b>+375 29 65 65 700</b></h4>
+          </div>
+        </div>
+        <div class="row mobile-style-block">
+          <div class="col-xs-6">
+            <button class="form-control btn-full-blue none-margin-top ng-binding" ng-click="openModal('query')">Оставить запрос</button>
+          </div>
+          <div class="col-xs-6">
+            <button class="form-control btn-blue none-margin-top ng-binding" ng-click="openModal('call')">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row display-none">
+        <div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3 col-xs-3 col-xs-offset-1 first">
+          <button class="form-control btn-full-blue ng-binding" ng-click="openModal('query')">Оставить запрос</button>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 call">
+          <button class="form-control btn-full-blue ng-binding" ng-click="openModal('call')">Заказать звонок</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<div id="back-top">
-  <a class="back-top" href="#slider"><i class="fa fa-angle-up"></i></a>
-</div>
-<div class="footer-bottom text-center">
+<div class="footer-bottom text-center border-separator-top">
   <p>Copyright &copy; 2016 <a href="http://mostafiz.me">Mostafiz</a> . All rights Reserved</p>
 </div>

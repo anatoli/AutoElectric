@@ -404,7 +404,7 @@ ul li {
 }
 
 #myCarousel .active {
-  background-color: #efcdb8;
+  rgba(245, 247, 247, 0.48);
 }
 /*//////////////////////////////////////////////////////*/
 
@@ -913,4 +913,16 @@ span.expiry_date {
   font-weight: 500;
 }
 
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  color: #782829;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.nav>li {
+  border-bottom: 1px #782829 solid;
+}
 

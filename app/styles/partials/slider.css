@@ -9,9 +9,9 @@ h2{
   max-width: none !important;
   display: inline-block !important;
 }
-.margin-slide button{
-  margin-left: 5px;
-}
+/*.margin-slide button{*/
+  /*margin-left: 5px;*/
+/*}*/
 .margin-slide{
   margin-top: 2%;
 }

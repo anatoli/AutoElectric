@@ -1,0 +1,11 @@
+.phone-img{
+  padding: 0% 0;
+}
+.phone-img img{
+  width: 40px;
+  height: 40px;
+}
+.number p{
+  margin: 0;
+  font-size: 17px;
+}

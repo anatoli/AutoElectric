@@ -120,7 +120,7 @@ angular.module('siBelApp', [
         },
         views: {
           'container@': {
-            templateUrl: '/views/partials/company/_reviews.html',
+            templateUrl: '/views/partials/company/_carsDetail.html',
             controller: 'CompanyReviewsCtrl'
           }
         }

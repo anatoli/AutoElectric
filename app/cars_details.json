@@ -1,19 +1,45 @@
 [
   {
    "label": "Audi",
-   "years": "1998"
+   "years": "1998",
+    "src": "../images/carBrands/Audi-logo.png",
+    "desc": "Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz."
+
   },
   {
-   "label": "Mazda",
-   "years": "1999"
+   "label": "BMW",
+   "years": "1999",
+    "src": "../images/carBrands/BMW-logo.png",
+    "desc": "BMW Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz."
+
   },
   {
-   "label": "Opel",
-   "years": "1995"
+   "label": "Honda",
+   "years": "2000",
+    "src": "../images/carBrands/Honda-logo.png",
+    "desc": "Honda Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz."
+
   },
   {
-   "label": "Renault",
-   "years": "2000"
+   "label": "Volkswagen",
+   "years": "2000",
+    "src": "../images/carBrands/Volkswagen-logo.png",
+    "desc": "Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz."
+
+  },
+  {
+   "label": "Toyota",
+   "years": "2000",
+    "src": "../images/carBrands/Toyota-logo.png",
+    "desc": "Toyota Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz."
+
+  },
+  {
+   "label": "Kia",
+   "years": "2000",
+    "src": "../images/carBrands/KIA-logo.png",
+    "desc": "Kia Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz.Audi Corporation is a Japanese automotive manufacturer headquartered in Toyota, Aichi, Japan. Toyota was the largest automobile manufacturer in 2015 ahead of the Volkswagen and Mercedes-Benz."
+
   }
 ]
 

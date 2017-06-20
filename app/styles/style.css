@@ -94,7 +94,7 @@ h6 {
     outline: 0;
 }
 body {
-    background-color: #e6b717;
+    background-color: #c7213d;
     line-height: 1;
     color: #707070;
     /*background: #fff;*/
@@ -156,7 +156,7 @@ h2 {
 /*********Header section styles********/
 
 #header {
-    background-color: #e6b717;;
+    background-color: #c7213d;;
     min-height: 50px;
     padding-left: 10%;
     padding-right: 10%;
@@ -1094,7 +1094,7 @@ a.gp {
     background: #8b7039;
 }
 .footer-top {
-    background-color: #e6b717;
+    background-color: #c7213d;
     padding-bottom: 20px;
 }
 .footer h3 {
@@ -1200,7 +1200,7 @@ ul.popular-posts li span {
     font-size: 14px;
 }
 .footer-bottom {
-    background-color: #e6b717;
+    background-color: #c7213d;
     padding: 20px 0;
     color: #aaa;
 }
