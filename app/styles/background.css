@@ -8,8 +8,16 @@
 }
 
 .border-separator-bottom {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #080808 !important;
+  box-shadow: 0 0 40px rgb(247, 245, 245);
 }
 .border-separator-top {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #080808;
+}
+
+
+.text-decoration{
+  font-weight: 800;
+  color: #100f0e !important;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
