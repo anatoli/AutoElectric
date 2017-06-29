@@ -200,8 +200,8 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     background: #fff;
 }
 .navbar-nav>li>a {
-    padding-top: 29px;
-    padding-bottom: 29px;
+    /*padding-top: 29px;*/
+    /*padding-bottom: 29px;*/
     transition: all 0.5s ease 0s;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
@@ -217,7 +217,15 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a.active {
     color: #fff;
-    background-color: #efc64f;
+    border-radius: 4px !important;
+    background: rgb(255, 169, 121) !important;
+}
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a.active {
+    color: #000;
+    border-radius: 4px !important;
+    background: rgb(255, 169, 121) !important;
 }
 .dropdown-menu>li>a {
     color: #707070;
