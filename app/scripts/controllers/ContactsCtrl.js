@@ -33,50 +33,50 @@ angular.module('siBelApp')
         });
       };
 
-      // var templateMarker = {
-      //   sibel_icon:{
-      //     iconUrl: '../images/icons/marker_b100.png',
-      //     iconSize:     [136, 70],
-      //     iconAnchor:   [54, 74],
-      //
-      //   }
-      // };
+      var templateMarker = {
+        sibel_icon:{
+          iconUrl: '../images/icons/marker_b100.png',
+          iconSize:     [136, 70],
+          iconAnchor:   [54, 74],
 
-    //   var mainMarker = {
-    //     lat: 53.905902508833165,
-    //     lng: 27.456910014152527,
-    //     focus: false,
-    //     draggable: false,
-    //     icon:templateMarker.sibel_icon
-    //   };
-    //
-    //   angular.extend($scope, {
-    //     center: {
-    //       lat:53.905902508833165,
-    //       lng:27.456910014152527,
-    //       zoom:17
-    //     },
-    //     markers: {
-    //       mainMarker: angular.copy(mainMarker)
-    //     },
-    //     events: { // or just {} //all events
-    //       markers:{
-    //         enable: [ 'dragend' ]
-    //         //logic: 'emit'
-    //       }
-    //     },
-    //     controls: {
-    //       custom: new L.Control.Fullscreen()
-    //     },
-    //     tiles: {
-    //       name: 'Mapbox Comic',
-    //     },
-    //   });
-    //
-    //   $scope.mapVisible = function () {
-    //     $scope.map=!$scope.map;
-    //   };
-    //
+        }
+      };
+
+      var mainMarker = {
+        lat: 53.905902508833165,
+        lng: 27.456910014152527,
+        focus: false,
+        draggable: false,
+        icon:templateMarker.sibel_icon
+      };
+
+      angular.extend($scope, {
+        center: {
+          lat:53.905902508833165,
+          lng:27.456910014152527,
+          zoom:15
+        },
+        markers: {
+          mainMarker: angular.copy(mainMarker)
+        },
+        events: { // or just {} //all events
+          markers:{
+            enable: [ 'dragend' ]
+            //logic: 'emit'
+          }
+        },
+        controls: {
+          custom: new L.Control.Fullscreen()
+        },
+        tiles: {
+          name: 'Mapbox Comic',
+        },
+      });
+
+      $scope.mapVisible = function () {
+        $scope.map=!$scope.map;
+      };
+
     // $rootScope.$on('$translateChangeSuccess', function () {
     //
     //   $translate('Error.Address_1').then(function (translation) {

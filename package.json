@@ -1,6 +1,5 @@
 {
   "name": "sibel",
-
   "devDependencies": {
     "angular-translate": "^2.12.1",
     "autoprefixer-core": "^5.2.1",
@@ -34,6 +33,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "lightslider": "^1.1.5"
+    "lightslider": "^1.1.5",
+    "wow": "0.0.6"
   }
 }

@@ -66,10 +66,10 @@
   <div class="collapse navbar-collapse text-decoration" id="bs-example-navbar-collapse-1">
   <!-- unordered list starts here -->
   <ul class="nav navbar-nav navbar-right">
-  <li><a class="active" href="index.html">Главная</a></li>
-  <li><a href="#">Услуги</a></li>
+  <li ng-click="stateGo('root.main')"><a class="" ng-class="{'active' : tabActive =='root.main'}" href="">Главная</a></li>
+  <li ng-click="stateGo('root.company.reviews')" ng-class="{'active' : tabActive =='root.company.reviews'}" ><a href="">Услуги</a></li>
   <li><a href="#">Это интересно</a></li>
-  <li><a href="contact.html">Контакты</a></li>
+  <li ng-click="stateGo('root.contacts')" ng-class="{'active' : tabActive =='root.contacts'}"><a href="">Контакты</a></li>
   </ul>
   </div>
   <!-- /.navbar-collapse -->

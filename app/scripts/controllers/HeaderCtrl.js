@@ -7,7 +7,7 @@ angular.module('siBelApp')
     $scope.by=false;
     $scope.ru=true;
     $scope.en=false;
-    $scope.tabActive = $state.current.name;
+    $scope.tabActive = $state.current.name = null ? "root.main" : $state.current.name ;
     $translate.use('ru');
 
     $scope.opened1=false;
@@ -157,6 +157,7 @@ angular.module('siBelApp')
 
     $rootScope.$on('$stateChangeSuccess',
       function(){
+      debugger
         $scope.tabActive = $state.current.name;
       });
 

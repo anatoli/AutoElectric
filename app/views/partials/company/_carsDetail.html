@@ -1,10 +1,12 @@
-
-  <div class="row" style="margin-top: 2%">
+<div style="height: 28px"></div>
+  <div  class="row" style="margin-top: 2%">
     <div class="col-md-3 col-sm-3 col-xs-3 col-lg-2" style="margin-top: 2%">
-
-
-      <ul class="nav nav-list bs-docs-sidenav" style="width: 100%; background-color: rgba(245, 247, 247, 0.48);">
-        <li ng-repeat="auto in autos " style="width: 100%;" class="active" ng-click="ClickCars(auto)">
+      <ul id="style-2" class="nav nav-list bs-docs-sidenav scrollbar" style="width: 100%; background-color: rgba(245, 247, 247, 0.48); height: 500px;
+    overflow: auto; z-index: 1000;">
+        <li style="width: 98%">
+          <input type="search" placeholder="Фильтр" ng-model="filter" >
+        </li>
+        <li ng-repeat="auto in autos | filter:filter " style="width: 98%;" class="active" ng-click="ClickCars(auto)">
           <a href="">
             <div class="row">
               <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4" >
@@ -47,4 +49,10 @@
     <div class="col-md-9 col-sm-9 col-xs-9 col-lg-10"></div>
   </div>
 
-
+<script>
+  $(document).ready(function () {
+    if (!$.browser.webkit) {
+    $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+    });
+</script>
