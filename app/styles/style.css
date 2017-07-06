@@ -76,7 +76,7 @@ td {
     font-weight: inherit;
     font-style: inherit;
     font-size: 100%;
-    font-family: inherit;
+    font-family: 'Exo 2', sans-serif;
     vertical-align: baseline;
 }
 h1,
@@ -2318,4 +2318,16 @@ a{
   #bfe8f9 50%,
   #9fd8ef 51%,
   #2ab0ed 100%);
+}
+
+.service-block{
+  color: #faebd7;
+  background: url("../images/logo_black.PNG") no-repeat left center,
+  linear-gradient(to top ,#fff, #000); /* W3C */
+}
+.background-header-address{
+  background: rgba(255, 169, 121, 0.7);
+  border-radius: 13px;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
 }

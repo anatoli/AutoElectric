@@ -23,23 +23,23 @@
   <!-- Logo ============================================= -->
   <div class="container">
     <div class="row">
-      <div id="logo" class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float: left">
+      <div id="logo" class="col-lg-5 col-md-5 col-sm-5 col-xs-5 pull-left">
         <a href="index.html" class="medihere-logo">
           <img src="images/logo_black_none_text.png" style="width: 18%" alt="medihere Logo" title="medihere">
-          <img src="images/logo_text.png" alt="medihere Logo" style="width: 80%" title="medihere">
+          <img src="images/logo_text.png" alt="medihere Logo" style="width: 60%" title="medihere">
         </a>
       </div>
-
-
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pull-right " style="margin-top: 1%">
-
-        <p class="text-decoration">+375 29 65 65 700</p>
-        <p class="text-decoration">+375 29 55 65 700</p>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right background-header-address" >
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="margin-top: 1%">
+          <p class="text-decoration"><span style="margin: 1%"><img width="20px" src="../images/icon/velcom.png"></span><span>+375 29 65 65 700</span></p>
+          <p class="text-decoration"><span style="margin: 1%"><img width="20px" src="../images/icon/mts.png"></span><span>+375 29 55 65 700</span></p>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 " style="margin-top: 1%; text-align: left ">
+          <p class="text-decoration">г. Минск &nbsp ул.Топографическая 7</p>
+          <p class="text-decoration">e-mail: 6565700@gmail.com</p>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pull-right" style="margin-top: 1%">
-        <p class="text-decoration">ул.Топографическая 7</p>
-        <p class="text-decoration">e-mail: 6565700@gmail.com</p>
-      </div>
+
     </div>
   </div>
   <!-- #logo end -->
@@ -62,19 +62,21 @@
   <!--&lt;!&ndash;</div>&ndash;&gt;-->
   <!--&lt;!&ndash;&lt;!&ndash; #logo end &ndash;&gt;&ndash;&gt;-->
   <!--</div>-->
-
-  <div class="collapse navbar-collapse text-decoration" id="bs-example-navbar-collapse-1">
-  <!-- unordered list starts here -->
-  <ul class="nav navbar-nav navbar-right">
-  <li ng-click="stateGo('root.main')"><a class="" ng-class="{'active' : tabActive =='root.main'}" href="">Главная</a></li>
-  <li ng-click="stateGo('root.company.reviews')" ng-class="{'active' : tabActive =='root.company.reviews'}" ><a href="">Услуги</a></li>
-  <li><a href="#">Это интересно</a></li>
-  <li ng-click="stateGo('root.contacts')" ng-class="{'active' : tabActive =='root.contacts'}"><a href="">Контакты</a></li>
-  </ul>
-  </div>
-  <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-  </nav>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
+      <nav>
+        <div class="collapse navbar-collapse text-decoration" id="bs-example-navbar-collapse-1">
+        <!-- unordered list starts here -->
+        <ul class="nav navbar-nav navbar-right">
+        <li ng-click="stateGo('root.main')"><a class="" ng-class="{'active' : tabActive =='root.main'}" href="">Главная</a></li>
+        <li ng-click="stateGo('root.company.reviews')" ng-class="{'active' : tabActive =='root.company.reviews'}" ><a href="">Услуги</a></li>
+        <li><a href="#">Это интересно</a></li>
+        <li ng-click="stateGo('root.contacts')" ng-class="{'active' : tabActive =='root.contacts'}"><a href="">Контакты</a></li>
+        </ul>
+        </div>
+      <!-- /.navbar-collapse -->
+      <!-- /.container-fluid -->
+      </nav>
+    </div>
   </div>
   <!-- #header end -->
