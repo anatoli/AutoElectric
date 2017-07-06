@@ -35,16 +35,16 @@ angular.module('siBelApp')
 
       var templateMarker = {
         sibel_icon:{
-          iconUrl: '../images/icons/marker_b100.png',
-          iconSize:     [136, 70],
+          iconUrl: '../images/logo.png',
+          iconSize:     [70, 45],
           iconAnchor:   [54, 74],
 
         }
       };
 
       var mainMarker = {
-        lat: 53.905902508833165,
-        lng: 27.456910014152527,
+        lat: 53.90841483,
+        lng: 27.46955931,
         focus: false,
         draggable: false,
         icon:templateMarker.sibel_icon
@@ -52,8 +52,8 @@ angular.module('siBelApp')
 
       angular.extend($scope, {
         center: {
-          lat:53.905902508833165,
-          lng:27.456910014152527,
+          lat:53.90841483,
+          lng:27.46955931,
           zoom:15
         },
         markers: {
