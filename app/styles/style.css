@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
 }
 
 /* remember to define focus styles! */
@@ -2330,4 +2330,7 @@ a{
   border-radius: 13px;
   padding-bottom: 0.5%;
   padding-top: 0.5%;
+}
+.border-chevrone{
+  border-bottom: 1px solid rgba(43, 42, 42, 0.48);
 }
