@@ -1,35 +1,8 @@
-<div id="myCarousel" class="carousel slide first-fixed-block " data-interval="3000" data-ride="carousel">
-  <div class="carousel-inner">
-    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-    <div class="item active">
-      <div class="background-slide background-slide-1"></div>
-      <img class="none-max-width n-bg-sl" src="../../../images/cases/case_idea.jpg">
-      <div class="row slide-1 captions">
-        <div class="col-md-5 col-sm-5 col-xs-5 margin-slide">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-11 margin-slide slide-1">
-          <div class=" slide-1-block-background slide-1-block-background-company">
-            <h1>{{Cases_Slider_Title| translate}} </br></h1>
-            <p>{{Cases_Slider_Description| translate}} </p>
-
-          </div>
-          <div class="row margin-slide">
-            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
-              <button ng-click="Email('query')" class=" form-control btn-full-blue">{{SLIDER_BTN_2 |translate}}</button>
-            </div>
-            <!--<div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">-->
-            <!--<button class="form-control btn-orange" ng-click="openModal('query')">{{SecondPage_Slider_Btn_2 |translate}}</button>-->
-            <!--</div>-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="details">
-  <div class="row">
+<div style="height: 130px" id="details"></div>
+<div ng-show="details">
+  <div class="row coupon-details-style">
     <div class="col-md-4 col-sm-4 col-xs-12">
-      <img ng-src="../../../images/cases/{{details.src}}">
+      <img ng-src="../../../images/{{details.src}}">
     </div>
     <div class="col-md-8 col-sm-8 col-xs-12" >
       <h3>{{details.title}}</h3>
@@ -44,7 +17,7 @@
     <div class="widget" ng-click="Active(item)"  ng-class="{'active' : active == item.id}">
       <div class="coupon-block equal">
         <div class="coupon-value" content="40%">{{item.title}}</div>
-        <a class="coupon-image bg-image" href="" title="" data-image-src="http://placehold.it/300x200" style="background: url(../../../images/cases/{{item.src}}) center center / cover no-repeat;"></a>
+        <a class="coupon-image bg-image" href="" title="" data-image-src="http://placehold.it/300x200" style="background: url(../../../images/{{item.src}}) center center / cover no-repeat;"></a>
         <p class="status-label">{{item.status}}</p>
         <div class="coupon-text">
           <p>
@@ -52,7 +25,7 @@
           </p>
         </div>
         <div class="action-block" ng-click="openDetails(item.text)">
-          <button class="form-control btn-blue">{{Ideas_Btn_1|translate}}</button>
+          <button class="form-control btn-blue">Подробнее</button>
         </div>
       </div>
     </div>

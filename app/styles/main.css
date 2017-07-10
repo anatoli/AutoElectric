@@ -417,7 +417,7 @@ ul li {
   margin-top: 30px;
   -webkit-transition: all .4s;
   transition: all .4s;
-  background: #fff;
+  background:  linear-gradient(to top ,#fff, #000);
 
 }
 .widget.active{
@@ -662,10 +662,17 @@ ul li {
   color: #a1a3a7;
 }
 
+.coupon-details-style {
+  background: linear-gradient(to top ,#fff, #000); /* W3C */
+  color: #fff;
+  padding: 2% 3% 4% 2%;
+}
 .coupon-details {
   margin-top: 15px;
   margin-bottom: 0;
 }
+
+
 
 .coupon-details ul li {
   margin-left: 0;
@@ -786,11 +793,13 @@ ul li {
   margin-top: 15px;
 }
 
+
 .coupon-block .coupon-store {
   line-height: 78px;
 }
 
 .coupon-block .coupon-value {
+  color: #fff;
   font-size: 21px;
   font-weight: 600;
   line-height: 1;
@@ -799,7 +808,7 @@ ul li {
 }
 
 .coupon-block .coupon-text{
-  background-color: #cedff0;
+  /*background-color: #cedff0;*/
   height: 27%;
   margin-bottom: 3%;
   padding-top: 7px;
@@ -808,13 +817,14 @@ ul li {
 
 .coupon-block .coupon-text p{
   font-size: 18px;
-  font-family: SegoeUIRegular;
+  font-family: inherit;
   line-height: 1;
   margin: 0px 0 0;
   padding: 6px;
   height: 82%;
   overflow: hidden;
-  background-color: #cedff0;
+  /*background-color: #cedff0;*/
+  color: #fff;
   display: inline-block;
 }
 

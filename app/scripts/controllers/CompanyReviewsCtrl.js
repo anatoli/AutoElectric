@@ -6,8 +6,8 @@
  * Created by Anatoli on 16.09.2016.
  */
 angular.module('siBelApp')
-  .controller('CompanyReviewsCtrl', ['$scope', '$uibModal', '$http', '$state','$rootScope',
-    function ($scope, $uibModal, $http, $state, $rootScope) {
+  .controller('CompanyReviewsCtrl', ['$scope', '$uibModal', '$http', '$state',
+    function ($scope, $uibModal, $http, $state) {
 
 
 
@@ -42,8 +42,7 @@ angular.module('siBelApp')
           resolve: {
             dataModal: function () {
               return {
-                data: data,
-                lang: $translate.proposedLanguage()
+                data: data
               };
             }
           },

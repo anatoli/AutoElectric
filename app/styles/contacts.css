@@ -40,7 +40,8 @@
   }
 }
 .contacts-map{
-  background-image: url("../images/auto-bg.jpg");
+  /*background-image: url("../images/auto-bg.jpg");*/
+  background: linear-gradient( rgba(243, 243, 245, 0.45), rgba(29, 29, 31, 0.45) ),url(../images/auto-bg.jpg);
   background-size: cover;
   position: absolute;
   height: 100%;

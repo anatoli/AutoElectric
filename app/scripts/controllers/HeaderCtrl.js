@@ -157,7 +157,6 @@ angular.module('siBelApp')
 
     $rootScope.$on('$stateChangeSuccess',
       function(){
-      debugger
         $scope.tabActive = $state.current.name;
       });
 

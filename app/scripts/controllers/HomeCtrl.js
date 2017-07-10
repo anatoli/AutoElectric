@@ -39,7 +39,7 @@ angular.module('siBelApp')
     $scope.ClickCars = function (data) {
       $scope.description = data.desc;
       $scope.src = data.src;
-    }
+    };
     $scope.stateGo = function (data, stateParams, $event) {
       if(data !=='#/'){
         $state.go(data, {param: stateParams});
