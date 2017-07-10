@@ -13,7 +13,7 @@
 </div>
 
 <div class="row">
-  <div class="col-sm-4" ng-repeat="item in items" ng-if="item!=details" ng-click="map(item)">
+  <div class="col-sm-3" ng-repeat="item in items" ng-if="item!=details" ng-click="map(item)">
     <div class="widget" ng-click="Active(item)"  ng-class="{'active' : active == item.id}">
       <div class="coupon-block equal">
         <div class="coupon-value" content="40%">{{item.title}}</div>
