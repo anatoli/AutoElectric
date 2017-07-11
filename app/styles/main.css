@@ -638,7 +638,7 @@ ul li {
   }
 }
 
-.coupon-contain span.verified.text-success i {
+.coupon-contain span.verified.text-success i {k
   padding-right: 5px;
 }
 
@@ -803,7 +803,7 @@ ul li {
   font-size: 21px;
   font-weight: 600;
   line-height: 1;
-  margin: 12px 0 12px;
+  padding-top: 12px;
   height: 50px;
 }
 
@@ -846,7 +846,7 @@ ul li {
   /*padding-bottom: 10px;*/
   text-align: left;
   padding: 10px;
-  height: 490px;
+  height: 390px
 }
 
 .coupon-block .coupon-image {
