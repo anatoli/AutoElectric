@@ -1100,7 +1100,7 @@ a.gp {
     background: #8b7039;
 }
 .footer-top {
-    background-color: #f15c09;
+    /*background-color: #f15c09;*/
     padding-bottom: 20px;
 }
 .footer h3 {
@@ -1206,7 +1206,7 @@ ul.popular-posts li span {
     font-size: 14px;
 }
 .footer-bottom {
-    background-color: #f15c09;
+    /*background-color: #f15c09;*/
     padding: 20px 0;
     color: #aaa;
 }

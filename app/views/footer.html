@@ -1,59 +1,55 @@
 <div class="footer-top">
   <div class="container">
-    <div class="row none-row block-default questions background-questions ng-scope" style="color: #faebd7;">
+    <div class="row none-row block-default background-questions questions ng-scope" style="color: #faebd7;">
 
-      <h2 class="text-left-mobile ng-binding" style="color: #faebd7;">Всегда готовы вам помочь</h2>
-      <div class="row display-none">
-        <div class="col-md-6 col-sm-6 col-xs-6">
-          <h3 style="text-align: center" class="ng-binding">Напишите нам,<br>и мы обязательно свяжемся с вами </h3>
+      <h2 class="text-left-mobile ng-binding" style="color: #faebd7; margin-bottom: 30px;" >Всегда готовы вам помочь</h2>
+      <div class="col-md-12">
 
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
-          <h3 style="text-align: center" class="ng-binding">Или звоните нам</h3>
-          <!-- ngInclude: --><ng-include src="'/views/partials/_phoneNumber.html'" class="phone-margin ng-scope"><div class="row phone ng-scope">
-          <div class="col-md-1 col-sm-1 col-xs-1 phone-img">
-            <img src="../../images/phone.png">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="ФИО *" id="name" required data-validation-required-message="Пожалуйста, введите ваше имя">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="e-mail *" id="email" required data-validation-required-message="Пожалуйста, проверьте введенный email">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Номер телефона *" id="phone" required data-validation-required-message="Пожалуйста, проверьте введенный номер">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Сообщение *" id="message" required data-validation-required-message="Пожалуйста, введите ваше сообщение"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center" style="padding-right: 0px; padding-left: 0px">
+                <div id="success"></div>
+                <button style=" background-color: #f15c09; margin-top: 0px;" type="submit" class="btn btn-lg btn-block btn-full-orange">Отправить</button>
+              </div>
+            </div>
+            <div class="col-md-6" style="color: #fff">
+              <div>
+                <h2 style="color: #faebd7; padding-top: 0px; margin-top: 0px">
+                  Телефон:
+                </h2>
+                <h1 class="text-center" style="font-size: 2em;">+375 (29) 719-14-44</h1>
+                <h1 class="text-center" style="font-size: 2em;">+375 (25) 912-65-81</h1>
+                <h2 style="color: #faebd7">e-mail: </h2>
+                <h1 class="text-center" style="font-size: 2em;"><a href="info@site.info">info@site.info</a></h1>
+              </div>
+            </div>
           </div>
-          <div class="col-md-10 col-sm-10 col-xs-10 number">
-            <p>+375 29 65 65 700</p>
-            <p>+375 29 65 65 700</p>
-          </div>
-        </div>
-        </ng-include>
+        </form>
 
-        </div>
       </div>
 
-      <div class="questions-2">
-        <h4 class="media-fonts-350 segoe-regular mobile-line-height dark-blue-color ng-binding">Напишите нам, и мы обязательно<br>свяжемся с вами. 3воните нам</h4>
-        <div class="row">
-          <div class="col-xs-6" style="text-align: center">
-            <h4 class="media-fonts-350"><b>+375 29 65 65 700</b></h4>
-          </div>
-          <div class="col-xs-6">
-            <h4 class="media-fonts-350"><b>+375 29 65 65 700</b></h4>
-          </div>
-        </div>
-        <div class="row mobile-style-block">
-          <div class="col-xs-6">
-            <button class="form-control btn-full-blue none-margin-top ng-binding" ng-click="openModal('query')">Оставить запрос</button>
-          </div>
-          <div class="col-xs-6">
-            <button class="form-control btn-blue none-margin-top ng-binding" ng-click="openModal('call')">Заказать звонок</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="row display-none">
-        <div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3 col-xs-3 col-xs-offset-1 first">
-          <button class="form-control btn-full-blue ng-binding" ng-click="openModal('query')">Оставить запрос</button>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-3 call">
-          <button class="form-control btn-full-blue ng-binding" ng-click="openModal('call')">Заказать звонок</button>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
 </div>
 <div class="footer-bottom text-center border-separator-top">
   <p>Copyright &copy; 2016 <a href="http://mostafiz.me">Mostafiz</a> . All rights Reserved</p>
